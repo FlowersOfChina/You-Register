@@ -1,0 +1,11 @@
+server:
+  port: 8080
+eureka:
+  instance:
+    hostname: server2.leemaster.cn
+  client:
+    service-url:
+      defaultZone: http://server1.leemaster.cn:8080/youmoney/
+
+  server:
+    enable-self-preservation: false
