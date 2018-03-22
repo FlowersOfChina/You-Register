@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: You-Money-Register-Service
+eureka:
+  instance:
+    hostname: server1.leemaster.cn
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8080/youmoney/
+
+
